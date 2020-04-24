@@ -2,7 +2,7 @@ package ch02;
 
 /**
  * p96練習2-3
- * 占いプログラムを指示通り作成する
+ * 占いプログラムを指示通り作成
  */
 public class ex3 {
     public static void main(String[] args){
