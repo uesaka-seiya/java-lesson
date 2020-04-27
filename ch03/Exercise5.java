@@ -8,7 +8,7 @@ public class Exercise5 {
     public static void main(String[] args) {
         System.out.print("[メニュー] 1:検索 2:登録 3:削除 4:変更 >");
         int selected = new java.util.Scanner(System.in).nextInt();
-        switch (selected){
+        switch (selected) {
             case 1:
                 System.out.print("検索します");
                 break;
