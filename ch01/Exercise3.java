@@ -7,8 +7,8 @@ package ch01;
  * 1. ture, 2. '駆', 3. 3.14, 4. 314159265853979L,
  * 5. "ミナトの攻撃！敵に15ポイントのダメージを与えた"
  */
-public class ex3 {
-    public static void main(String[] args){
+public class Exercise3 {
+    public static void main(String[] args) {
         boolean result = true;
         char myCharacter = '駆';
         double pi = 3.14;

@@ -1,4 +1,5 @@
 package ch01;
+
 /**
  * p58 練習1-2
  * 次のような結果を表示するソースコードを作成せよ。
@@ -8,8 +9,8 @@ package ch01;
  * 2．aとbの掛け算の結果を変数cに入れる
  * 3．変数cを下記のように表示する
  */
-public class ex2 {
-    public static void main(String[] args){
+public class Exercise2 {
+    public static void main(String[] args) {
         int a = 3;
         int b = 5;
         int c = a * b;
