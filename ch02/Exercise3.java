@@ -4,8 +4,8 @@ package ch02;
  * p96練習2-3
  * 占いプログラムを指示通り作成
  */
-public class ex3 {
-    public static void main(String[] args){
+public class Exercise3 {
+    public static void main(String[] args) {
         System.out.println("ようこそ占いの館へ");
         System.out.println("あなたの名前を入力してください");
         String name = new java.util.Scanner(System.in).nextLine();
