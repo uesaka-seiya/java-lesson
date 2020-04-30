@@ -9,6 +9,7 @@ public class Exercise1 {
     public static void main(String[] args) {
         introduceOneself();
     }
+
     public static void introduceOneself() {
             String name = "上坂静耶";
             int age = 23;

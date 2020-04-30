@@ -11,10 +11,12 @@ public class Exercise4 {
         double area = bottom * height / 2;
         return area;
     }
+
     public static double calcCircleArea(double radius) {
         double area = Math.pow(radius, 2) * Math.PI;
         return area;
     }
+
     public static void main(String[] args) {
         double triangleArea = calcTriangleArea(10.0, 5.0);
         double circleArea = calcCircleArea(5.0);
