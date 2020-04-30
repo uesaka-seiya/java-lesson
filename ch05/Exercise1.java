@@ -11,10 +11,10 @@ public class Exercise1 {
     }
 
     public static void introduceOneself() {
-            String name = "上坂静耶";
-            int age = 23;
-            double height = 156.3;
-            char zodiac = '子';
+        String name = "上坂静耶";
+        int age = 23;
+        double height = 156.3;
+        char zodiac = '子';
         System.out.println("名前: " + name);
         System.out.println("年齢: " + age);
         System.out.println("身長: " + height);
