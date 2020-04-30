@@ -7,6 +7,13 @@ package ch05;
  * 戻り値を出力して正しい面積が表示されるか確認せよ。
  */
 public class Exercise4 {
+    public static void main(String[] args) {
+        double triangleArea = calcTriangleArea(10.0, 5.0);
+        double circleArea = calcCircleArea(5.0);
+        System.out.println("三角形の面積:" + String.format("%.1f", triangleArea) + "平方cm");
+        System.out.println("円の面積:" + String.format("%.1f", circleArea) + "平方cm");
+    }
+
     public static double calcTriangleArea(double bottom, double height) {
         double area = bottom * height / 2;
         return area;
@@ -15,12 +22,5 @@ public class Exercise4 {
     public static double calcCircleArea(double radius) {
         double area = Math.pow(radius, 2) * Math.PI;
         return area;
-    }
-
-    public static void main(String[] args) {
-        double triangleArea = calcTriangleArea(10.0, 5.0);
-        double circleArea = calcCircleArea(5.0);
-        System.out.println("三角形の面積:" + String.format("%.1f", triangleArea) + "平方cm");
-        System.out.println("円の面積:" + String.format("%.1f", circleArea )+ "平方cm");
     }
 }
