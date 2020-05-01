@@ -4,7 +4,7 @@ package ch06;
  * p263 練習6-1
  * (1) commentパッケージに属するZenhanクラスにdoWarusa()とdoTogame()を定義
  * (2) commentパッケージに属するKouhanクラスにcallDeae()とshowMondokoro()を定義
- * (3) デフォルトパッケージに属するMainクラスにはmainメソッドだけを定義
+ * (3) Mainクラスにはmainメソッドだけを定義
  *      ただしMainクラスの先頭でインポートするのはZenhanクラスのみとする
  */
 
