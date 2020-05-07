@@ -10,6 +10,11 @@ package ch08;
  * p329 練習8-3
  * selfAid()を追加。引数なし、戻り値なし。
  * MPを5消費することで自分自身のHPを最大HPまで回復するメソッド。
+ * p329 練習8-4
+ * MP回復のメソッドpray()を追加。
+ * 回復量は祈った秒数にランダムで0〜2ポイントの補正を加えた値。
+ * ただし最大HPを超過することはない。
+ * 引数に祈る秒数を指定し戻り値として「実際に回復したMPの量」を返す。ｑ
  */
 public class Cleric {
     String name;
@@ -24,6 +29,19 @@ public class Cleric {
         this.mp -= 5;
         System.out.println("HPが最大まで回復した");
         System.out.println("MPは"+ this.mp + "になった");
+    }
+
+    public int pray(int sec) {
+        System.out.println(this.name + "は、" + sec + "秒間祈った！");
+        int mpBefore = this.mp;
+        int recover = new java.util.Random().nextInt(3) + sec;
+        this.mp += recover;
+        if (this.mp > this.MAX_MP) {
+            this.mp = this.MAX_MP;
+        }
+        int recoverActual = this.mp - mpBefore;
+        System.out.println("MPが" + recoverActual + "回復した");
+        return recoverActual;
     }
 
 
