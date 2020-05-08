@@ -38,7 +38,7 @@ public class Cleric {
         System.out.println(this.name + "は " + sec + "秒間 祈った！");
         int recover = new java.util.Random().nextInt(3) + sec;
         int recoverActual = Math.min(recover, this.MAX_MP - this.mp);
-        this.mp = this.mp + recoverActual;
+        this.mp += recoverActual;
         System.out.println("MPが " + recoverActual + " かいふくした！");
         return recoverActual;
     }
