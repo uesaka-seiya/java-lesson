@@ -39,6 +39,4 @@ public class Cleric {
         System.out.println("MPが" + recoverActual + "回復した");
         return recoverActual;
     }
-
-
 }
