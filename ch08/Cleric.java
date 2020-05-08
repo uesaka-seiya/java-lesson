@@ -29,7 +29,7 @@ public class Cleric {
             this.hp = this.MAX_HP;
             this.mp -= 5;
             System.out.println("HPが さいだいまで かいふくした");
-        }else{
+        } else {
             System.out.println("しかし MPが たりない！");
         }
     }
