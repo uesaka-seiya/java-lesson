@@ -33,13 +33,9 @@ public class Cleric {
 
     public int pray(int sec) {
         System.out.println(this.name + "は、" + sec + "秒間祈った！");
-        int mpBefore = this.mp;
         int recover = new java.util.Random().nextInt(3) + sec;
-        this.mp += recover;
-        if (this.mp > this.MAX_MP) {
-            this.mp = this.MAX_MP;
-        }
-        int recoverActual = this.mp - mpBefore;
+        int recoverActual = Math.min(recover, this.MAX_MP - this.mp);
+        this.mp = this.mp + recoverActual;
         System.out.println("MPが" + recoverActual + "回復した");
         return recoverActual;
     }
