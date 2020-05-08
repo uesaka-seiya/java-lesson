@@ -25,10 +25,14 @@ public class Cleric {
 
     public void selfAid() {
         System.out.println(this.name + "は、セルフエイドを唱えた！");
-        this.hp = this.MAX_HP;
-        this.mp -= 5;
-        System.out.println("HPが最大まで回復した");
-        System.out.println("MPは"+ this.mp + "になった");
+        if (this.mp >= 5) {
+            this.hp = this.MAX_HP;
+            this.mp -= 5;
+            System.out.println("HPが最大まで回復した");
+            System.out.println("MPは" + this.mp + "になった");
+        }else{
+            System.out.println("しかし MPが たりない！");
+        }
     }
 
     public int pray(int sec) {
