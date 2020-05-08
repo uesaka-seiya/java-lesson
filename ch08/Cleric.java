@@ -24,23 +24,22 @@ public class Cleric {
     final int MAX_MP = 10;
 
     public void selfAid() {
-        System.out.println(this.name + "は、セルフエイドを唱えた！");
+        System.out.println(this.name + "は セルフエイドを となえた！");
         if (this.mp >= 5) {
             this.hp = this.MAX_HP;
             this.mp -= 5;
-            System.out.println("HPが最大まで回復した");
-            System.out.println("MPは" + this.mp + "になった");
+            System.out.println("HPが さいだいまで かいふくした");
         }else{
             System.out.println("しかし MPが たりない！");
         }
     }
 
     public int pray(int sec) {
-        System.out.println(this.name + "は、" + sec + "秒間祈った！");
+        System.out.println(this.name + "は " + sec + "秒間 祈った！");
         int recover = new java.util.Random().nextInt(3) + sec;
         int recoverActual = Math.min(recover, this.MAX_MP - this.mp);
         this.mp = this.mp + recoverActual;
-        System.out.println("MPが" + recoverActual + "回復した");
+        System.out.println("MPが " + recoverActual + " かいふくした！");
         return recoverActual;
     }
 }
