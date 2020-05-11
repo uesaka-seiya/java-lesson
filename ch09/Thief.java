@@ -21,7 +21,7 @@ public class Thief {
     }
 
     public Thief(String name, int hp) {
-        this(name, hp,5);
+        this(name, hp, 5);
     }
 
     public Thief(String name) {
