@@ -18,5 +18,14 @@ public class Main {
         } else {
             System.out.println("口座番号は異なります");
         }
+
+        // 練習14-2 動作確認
+        Cleric player = new Cleric("ミナト");
+        player.setHp(10);
+        System.out.println(player);
+        player.selfAid();
+        System.out.println(player);
+        player.pray(4);
+        System.out.println(player);
     }
 }
