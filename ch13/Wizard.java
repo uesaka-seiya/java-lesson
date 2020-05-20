@@ -25,11 +25,16 @@ public class Wizard {
     private String name;
     private Wand wand;
 
-    public void heal(Hero h) {
-        int basePoint = 10; // 基本回復ポイント
-        int recoveredPoint = (int) (basePoint * this.getWand().getPower());   // 杖による増幅
-        h.setHp(h.getHp() + recoveredPoint);    // 勇者のHPを回復する
-        System.out.println(h.getName() + "のHPを" + recoveredPoint + "回復した！");
+    /**
+     * healメソッド
+     * 勇者のHPを回復する（回復ポイントは杖の魔力に応じて増幅される）
+     * @param hero 回復対象の勇者
+     */
+    public void heal(Hero hero) {
+        int basePoint = 10;
+        int recoveredPoint = (int) (basePoint * this.getWand().getPower());
+        hero.setHp(hero.getHp() + recoveredPoint);
+        System.out.println(hero.getName() + "のHPを" + recoveredPoint + "回復した！");
     }
 
     public int getHp() {
