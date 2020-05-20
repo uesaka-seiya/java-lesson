@@ -20,8 +20,16 @@ package ch13;
  *  （ただしHPに負の値をセットした場合は自動的に0が設定される）
  */
 public class Wand {
-    private String name;    // 杖の名前
-    private double power;   // 杖の魔力
+
+    /**
+     * 杖の名前
+     */
+    private String name;
+
+    /**
+     * 杖の魔力
+     */
+    private double power;
 
     public String getName() {
         return this.name;
