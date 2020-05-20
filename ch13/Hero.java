@@ -10,7 +10,7 @@ public class Hero {
 
     public void setName(String name) {
         if (name == null) {
-            throw new IllegalArgumentException("名前がnullのため処理を中断しました。");
+            throw new IllegalArgumentException("名前を設定してください。");
         }
         this.name = name;
     }
@@ -21,7 +21,7 @@ public class Hero {
 
     public void setHp(int hp) {
         if (hp < 0) {
-            throw new IllegalArgumentException("HPが0未満のため処理を中断しました。");
+            throw new IllegalArgumentException("HPは0以上で設定してください。");
         }
         this.hp = hp;
     }
