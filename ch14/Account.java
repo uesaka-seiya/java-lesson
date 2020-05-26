@@ -30,7 +30,7 @@ public class Account {
     /**
      * ①文字列表現のメソッド
      *
-     * @return 残高と口座番号を指定形式で表示する
+     * @return 残高と口座番号を指定形式の文字列で返す
      */
     @Override
     public String toString() {
