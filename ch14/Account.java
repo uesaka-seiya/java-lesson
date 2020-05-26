@@ -43,7 +43,7 @@ public class Account {
      * 口座番号の前後に半角スペースがある場合はスペースを無視して判定する
      *
      * @param other 比較対象のAccountインスタンス
-     * @return 等価:true, 不等価: false
+     * @return true: 等価, false: 不等価
      */
     @Override
     public boolean equals(Object other) {
