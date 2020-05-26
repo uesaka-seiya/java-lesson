@@ -10,9 +10,9 @@ package ch14;
 public class Cleric {
     private String name;
     private int hp;
-    static final int MAX_HP = 50;
+    private static final int MAX_HP = 50;
     private int mp;
-    static final int MAX_MP = 10;
+    private static final int MAX_MP = 10;
 
     public Cleric(String name) {
         this.name = name;
