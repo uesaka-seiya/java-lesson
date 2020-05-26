@@ -21,7 +21,7 @@ public class Cleric {
     }
 
     /**
-     * 自己回復メソッドselfAid()
+     * 自己回復メソッド
      * 自分のMPを5消費して自分のHPを最大HPまで回復する
      */
     public void selfAid() {
@@ -36,7 +36,7 @@ public class Cleric {
     }
 
     /**
-     * MP回復メソッドpray()
+     * MP回復メソッド
      * 祈ると自分のMPのが回復する
      * 回復量は祈った秒数にランダムで0〜2ポイントの補正を加えた値
      * ただし最大MPを超過することはない
