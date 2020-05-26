@@ -26,9 +26,8 @@ public class Wizard {
     private Wand wand;
 
     /**
-     * healメソッド
-     * 勇者のHPを回復する
-     * 基本回復ポイント(初期値10)は杖の魔力に応じて増幅する
+     * 勇者のHPを回復するメソッド
+     * 回復量 = 杖の魔力 + 10
      *
      * @param hero 回復対象の勇者
      */
