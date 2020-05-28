@@ -12,7 +12,7 @@ public class Exercise2 {
     public static void main(String[] args) {
         Hero player1 = new Hero("斎藤");
         Hero player2 = new Hero("鈴木");
-        List<Hero> heroes = new ArrayList<Hero>();
+        List<Hero> heroes = new ArrayList<>();
         heroes.add(player1);
         heroes.add(player2);
         for (Hero hero : heroes) {
