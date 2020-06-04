@@ -31,7 +31,7 @@ public class Sort {
 
     /**
      * 数値を10回入力して昇順に並べ替えて表示するメインメソッド
-     * 整数ではない値が入力された場合は例外を投げて処理を中断しメッセージを表示する
+     * 整数ではない値が入力された場合は処理を中断しメッセージを表示する
      */
     public static void main(String[] args) {
         int[] inputNumbers = new int[10];
