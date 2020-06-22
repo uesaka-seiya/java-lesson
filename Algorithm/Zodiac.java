@@ -19,9 +19,8 @@ public class Zodiac {
         int mod = year % 12;
         if (mod < 4) {
             return zodiac[mod + 8];
-        } else {
-            return zodiac[mod - 4];
         }
+        return zodiac[mod - 4];
     }
 
     /**
