@@ -35,10 +35,11 @@ public class CoinCase {
      * @param count 枚数
      */
     public void addCoins(int coinType, int count) {
-        if (coinType != 500 && coinType != 100 && coinType != 50 && coinType != 10 && coinType != 5 && coinType != 1) {
+        if (coins.containsKey(coinType)) {
+            this.coins.put(coinType, getCount(coinType) + count);
+        } else {
             throw new IllegalArgumentException("存在する硬貨を入力してください");
         }
-        this.coins.put(coinType, getCount(coinType) + count);
     }
 
     /**
