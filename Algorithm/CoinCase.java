@@ -49,8 +49,7 @@ public class CoinCase {
      * @return 硬貨の枚数
      */
     public int getCount(int coinType) {
-        int count = this.coins.get(coinType);
-        return count;
+        return this.coins.get(coinType);
     }
 
     /**
@@ -59,12 +58,10 @@ public class CoinCase {
      * @return 硬貨の総額
      */
     public int getAmount() {
-        int total = 0;
-        for (Integer key : this.coins.keySet()) {
-            total += key * this.getCount(key);
-        }
-        return total;
-    }
+      return coins.entrySet().stream()
+        .mapToInt(entry -> entry.getKey() * entry.getValue())
+        .sum();
+      }
 
 
     public static void main(String[] args) {
