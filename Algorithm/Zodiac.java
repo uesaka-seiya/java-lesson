@@ -33,8 +33,8 @@ public class Zodiac {
     }
 
     public static void main(String[] args) {
-      for (int i = 2020; i < 2032; i++) {
-        outputMessage(i);
-      }
+        for (int i = 2020; i < 2032; i++) {
+            outputMessage(i);
+        }
     }
 }

@@ -58,11 +58,10 @@ public class CoinCase {
      * @return 硬貨の総額
      */
     public int getAmount() {
-      return coins.entrySet().stream()
-        .mapToInt(entry -> entry.getKey() * entry.getValue())
-        .sum();
-      }
-
+        return coins.entrySet().stream()
+            .mapToInt(entry -> entry.getKey() * entry.getValue())
+            .sum();
+        }
 
     public static void main(String[] args) {
         CoinCase myCase = new CoinCase();
@@ -86,8 +85,6 @@ public class CoinCase {
             System.out.println("入力エラー: 整数を入力してください");
         } catch (IllegalArgumentException illegalArgumentException) {
             System.out.println("入力エラー: " + illegalArgumentException.getMessage());
-
         }
     }
 }
-
