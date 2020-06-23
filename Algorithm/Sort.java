@@ -38,8 +38,7 @@ public class Sort {
         try {
             for (int i = 0; i < 10; i++) {
                 System.out.println("整数を入力してください。");
-                int value = new java.util.Scanner(System.in).nextInt();
-                inputNumbers[i] = value;
+                inputNumbers[i] = new java.util.Scanner(System.in).nextInt();
             }
             ascendingOrder(inputNumbers);
             System.out.println(Arrays.toString(inputNumbers));
