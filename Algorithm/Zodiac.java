@@ -33,29 +33,8 @@ public class Zodiac {
     }
 
     public static void main(String[] args) {
-        // 2020年
-        outputMessage(2020);
-        // 2021年
-        outputMessage(2021);
-        // 2022年
-        outputMessage(2022);
-        // 2023年
-        outputMessage(2023);
-        // 2024年
-        outputMessage(2024);
-        // 2025年
-        outputMessage(2025);
-        // 2026年
-        outputMessage(2026);
-        // 2027年
-        outputMessage(2027);
-        // 2028年
-        outputMessage(2028);
-        // 2029年
-        outputMessage(2029);
-        // 2030年
-        outputMessage(2030);
-        // 2031年
-        outputMessage(2031);
+      for (int i = 2020; i < 2032; i++) {
+        outputMessage(i);
+      }
     }
 }
